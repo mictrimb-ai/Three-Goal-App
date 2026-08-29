@@ -14,3 +14,9 @@ blockquote {
 figure {
     margin-left: 0;
 }
+
+.goal-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
