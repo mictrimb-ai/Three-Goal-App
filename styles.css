@@ -24,4 +24,13 @@ figure {
 
 .goal-control-group {
     display: flex;
+    gap: 8px;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+body {
+    font-family: system-ui, sans-serif;
 }
