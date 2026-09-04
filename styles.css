@@ -13,6 +13,8 @@ blockquote {
 
 figure {
     margin-left: 0;
+    padding-left: 16px;
+    border-left: 4px solid #243b53;
 }
 
 .goal-row {
@@ -33,4 +35,13 @@ figcaption {
 
 body {
     font-family: system-ui, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    color: #243b53;
 }
