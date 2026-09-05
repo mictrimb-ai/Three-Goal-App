@@ -27,6 +27,7 @@ figure {
 .goal-control-group {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 figcaption {
@@ -48,4 +49,9 @@ h2 {
 
 input {
     font-size: inherit;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    padding: 8px;
 }
