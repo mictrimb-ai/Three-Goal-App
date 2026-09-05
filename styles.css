@@ -45,3 +45,7 @@ h1,
 h2 {
     color: #243b53;
 }
+
+input {
+    font-size: inherit;
+}
