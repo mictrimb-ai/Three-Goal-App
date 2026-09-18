@@ -27,12 +27,12 @@ These checks remain relevant when later features change the page.
 
 Checkpoint: [`fd31510`](https://github.com/mictrimb-ai/Three-Goal-App/commit/fd31510b22f7aa6204991da47a758e3abdd76103).
 
-### 4. Local development setup 📍
+### 4. Local development setup ✅
 
 - Serve the existing files from localhost and verify that HTML, CSS, and JavaScript still load.
-- Use this setup to test browser storage in the following milestone.
+- Use this setup to test browser storage in milestone 6.
 
-### 5. Three-goal interaction ⬜
+### 5. Three-goal interaction 📍
 
 - Read the values and checked states of all three goal rows in JavaScript.
 - Respond to edits and completion changes.
