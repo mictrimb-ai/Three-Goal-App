@@ -55,3 +55,11 @@ input {
 input[type="text"] {
     padding: 8px;
 }
+
+.goal-row.completed {
+    opacity: 0.6;
+}
+
+.goal-row.completed input[type="text"] {
+    text-decoration: line-through;
+}
