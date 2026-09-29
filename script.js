@@ -35,3 +35,14 @@ function updateGoalAppearances(event) {
 goalOneRowCheckbox.addEventListener("change", updateGoalAppearances);
 goalTwoRowCheckbox.addEventListener("change", updateGoalAppearances);
 goalThreeRowCheckbox.addEventListener("change", updateGoalAppearances);
+
+const goalOneRowTextbox = document.getElementById("goal-1");
+
+function resetGoalOneCompletion () {
+    goalOneRowCheckbox.checked = false;
+    const changedRow = goalOneRowTextbox.closest(".goal-row");
+
+    changedRow.classList.remove("completed");
+}
+
+goalOneRowTextbox.addEventListener("input", resetGoalOneCompletion);
