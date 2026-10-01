@@ -44,5 +44,25 @@ function resetGoalOneCompletion () {
 
     changedRow.classList.remove("completed");
 }
-
 goalOneRowTextbox.addEventListener("input", resetGoalOneCompletion);
+
+
+const goalTwoRowTextbox = document.getElementById("goal-2");
+
+function resetGoalTwoCompletion () {
+    goalTwoRowCheckbox.checked = false;
+    const goalRowTwo = goalTwoRowTextbox.closest(".goal-row");
+    goalRowTwo.classList.remove("completed");
+
+}
+goalTwoRowTextbox.addEventListener("input", resetGoalTwoCompletion);
+
+
+const goalThreeRowTextbox = document.getElementById("goal-3");
+
+function resetGoalThreeCompletion () {
+    goalThreeRowCheckbox.checked = false;
+    const goalThreeRow = goalThreeRowTextbox.closest(".goal-row");
+    goalThreeRow.classList.remove("completed");
+}
+goalThreeRowTextbox.addEventListener("input", resetGoalThreeCompletion);
