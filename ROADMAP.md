@@ -32,13 +32,13 @@ Checkpoint: [`fd31510`](https://github.com/mictrimb-ai/Three-Goal-App/commit/fd3
 - Serve the existing files from localhost and verify that HTML, CSS, and JavaScript still load.
 - Use this setup to test browser storage in milestone 6.
 
-### 5. Three-goal interaction 📍
+### 5. Three-goal interaction ✅
 
 - Read the values and checked states of all three goal rows in JavaScript.
 - Respond to edits and completion changes.
 - Decide what blank goals and edits to completed goals should mean before enforcing a rule.
 
-### 6. Save and restore goals ⬜
+### 6. Save and restore goals 📍
 
 - Save goal text and completion states in browser storage.
 - Restore them on reload without breaking random quote selection.

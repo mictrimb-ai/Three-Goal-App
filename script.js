@@ -37,20 +37,24 @@ goalTwoRowCheckbox.addEventListener("change", updateGoalAppearances);
 goalThreeRowCheckbox.addEventListener("change", updateGoalAppearances);
 
 const goalOneRowTextbox = document.getElementById("goal-1");
+goalOneRowCheckbox.disabled = goalOneRowTextbox.value.trim() === "";
 
 function resetGoalOneCompletion () {
     goalOneRowCheckbox.checked = false;
+    goalOneRowCheckbox.disabled = goalOneRowTextbox.value.trim() === "";
     const changedRow = goalOneRowTextbox.closest(".goal-row");
-
     changedRow.classList.remove("completed");
+
 }
 goalOneRowTextbox.addEventListener("input", resetGoalOneCompletion);
 
 
 const goalTwoRowTextbox = document.getElementById("goal-2");
+goalTwoRowCheckbox.disabled = goalTwoRowTextbox.value.trim() === "";
 
 function resetGoalTwoCompletion () {
     goalTwoRowCheckbox.checked = false;
+    goalTwoRowCheckbox.disabled = goalTwoRowTextbox.value.trim() === "";
     const goalRowTwo = goalTwoRowTextbox.closest(".goal-row");
     goalRowTwo.classList.remove("completed");
 
@@ -59,9 +63,11 @@ goalTwoRowTextbox.addEventListener("input", resetGoalTwoCompletion);
 
 
 const goalThreeRowTextbox = document.getElementById("goal-3");
+goalThreeRowCheckbox.disabled = goalThreeRowTextbox.value.trim() === "";
 
 function resetGoalThreeCompletion () {
     goalThreeRowCheckbox.checked = false;
+    goalThreeRowCheckbox.disabled = goalThreeRowTextbox.value.trim() === "";
     const goalThreeRow = goalThreeRowTextbox.closest(".goal-row");
     goalThreeRow.classList.remove("completed");
 }
